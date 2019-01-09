@@ -1,2 +1,1 @@
-# data_structures_and_algorithms_401
-challenges
+# Whiteboard Assets
