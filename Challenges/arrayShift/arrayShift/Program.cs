@@ -2,7 +2,7 @@
 
 namespace arrayShift
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -14,7 +14,7 @@ namespace arrayShift
             Console.ReadLine();
         }
 
-       private static int[] ArrayShift(int[] oldArray, int newNumber)
+       public static int[] ArrayShift(int[] oldArray, int newNumber)
 
         {
             int oldArrayLength = oldArray.Length;
