@@ -44,7 +44,7 @@ namespace binarySearchTDD
             //act
             int storedValue = Program.BinarySearch(binarySearch, key);
 
-            //assert
+            //assert t
 
             Assert.Equal(2, storedValue);
         }
