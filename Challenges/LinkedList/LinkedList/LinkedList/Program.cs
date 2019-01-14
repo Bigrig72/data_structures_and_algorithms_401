@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code_challenge_03
+namespace LinkedList
 {
     class Program
     {
