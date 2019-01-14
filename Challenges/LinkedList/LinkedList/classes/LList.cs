@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+/// <summary>
+/// Reassigning the head to current to be able to travers through the node tree
+/// </summary>
 namespace LinkedList.classes
 {
     public class LList
@@ -16,6 +18,14 @@ namespace LinkedList.classes
             node.Next = Head;
             Head = node;
         }
+        /// <summary>
+        /// Checking to see if a value is included in the Linked List
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>
+        /// True if current value equals value, will keep going until it reaches Null
+        /// False if Null of hit the end of the tree
+        /// </returns>
 
         public bool Includes(int value)
         {
