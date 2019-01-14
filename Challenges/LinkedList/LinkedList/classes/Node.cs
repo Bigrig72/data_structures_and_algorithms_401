@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
+/// <summary>
+/// Setting up NODE and what the value will be
+/// </summary>
 namespace LinkedList.classes
 {
     public class Node
