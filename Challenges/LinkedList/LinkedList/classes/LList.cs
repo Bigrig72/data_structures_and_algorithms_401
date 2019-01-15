@@ -36,11 +36,11 @@ namespace LinkedList.classes
             //We are not at the end of the list
             while (Current.Next != null)
             {
-                if(Current.Value == value)
+                if (Current.Value == value)
                 {
                     return true;
                 }
-                Current = Current.Next;                         
+                Current = Current.Next;
             }
             if (Current.Value == value)
             {
@@ -53,16 +53,87 @@ namespace LinkedList.classes
         /// </summary>
         public void Print()
         {
-            Console.Write("Head ->");
-            Node Current = Head;
+            if (Head != null)
+            {
+                Current = Head;
 
-            while(Current.Next != null){
-                Console.Write(Current.Value);
-                Console.Write("->");
+                while (Current.Next != null)
+                {
+                    Console.Write($"{Current.Value} => ");
+
+                    Current = Current.Next;
+
+                }
+                Console.Write($"{Current.Value} NULL");
+                Console.WriteLine("");
+            }
+
+            else
+            {
+                Console.Write("Your LL is empty");
+            }
+        }
+        public void Append(int value)
+        {
+            Current = Head;
+
+            while (Current.Next != null)
+            {
+          
                 Current = Current.Next;
 
             }
-            Console.Write("NULL");
+
+            Node node = new Node(value);
+            Current.Next = node;
+
+        }
+
+        public void InsertBefore(int value, int newValue)
+        {
+            Current = Head;
+
+            if(Current.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
+
+            while(Current.Next != null)
+            {
+                if(Current.Next.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+
+                Current = Current.Next;
+            }
+        }
+        public void InsertAfter(int value, int newValue)
+        {
+            Current = Head;
+
+            if (Current.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
+
+            while (Current.Next != null)
+            {
+                if (Current.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+
+                Current = Current.Next;
+            }
         }
     }
 }
