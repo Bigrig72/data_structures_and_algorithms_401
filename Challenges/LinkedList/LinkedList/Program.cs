@@ -24,6 +24,21 @@ namespace LinkedList
             Console.WriteLine($" does 12 exist: {list.Includes(8)}");
 
             list.Print();
+
+            list.Append(16);
+            list.Append(25);
+            list.Append(30);
+
+            Console.WriteLine($" does 30 exist: {list.Includes(30)}");
+
+
+            list.InsertBefore(25, 53);
+            list.InsertAfter(53, 31);
+
+            list.Print();
+
+
+
         }
     }
 }
