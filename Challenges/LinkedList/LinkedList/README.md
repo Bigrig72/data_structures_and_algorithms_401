@@ -1,4 +1,4 @@
-## Lab 05: Linked Lists LinkedList
+# Lab 05: Linked Lists LinkedList
 
 # what is the application?
 
