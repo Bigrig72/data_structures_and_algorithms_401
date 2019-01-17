@@ -1,8 +1,16 @@
 # Lab 05: Linked Lists LinkedList
 
-# what is the application?
+# Singly Linked List
+<!-- Short summary or background information -->
 
-We are building a linked list and the application will be able to add a value and check to see if a value is included. You will also be able to see the traversal printed out.
+## Challenge
+<!-- Description of the challenge -->
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
 
 # What it looks like?
 
