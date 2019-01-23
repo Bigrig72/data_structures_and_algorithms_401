@@ -57,17 +57,29 @@ namespace stackAndQue
             Assert.Equal(20, 20);
             
         }
+
         [Fact]
-        // Push is meaning the top is the node
-        // using and showing push with two integers
-        public void PushAValue3()
+        // Push 2 integers on stack and test the TOP node
+        public void PushStackTop()
         {
             Node node = new Node(125);
             Stack stack = new Stack(node);
             stack.Push(20);
             stack.Push(30);
-            Assert.Equal(30, 30);
+            Assert.Equal(30, stack.Top.Value);
         }
+
+        [Fact]
+        // Push 2 integers on stack and test the NEXT node
+        public void PushStackNext()
+        {
+            Node node = new Node(125);
+            Stack stack = new Stack(node);
+            stack.Push(20);
+            stack.Push(30);
+            Assert.Equal(20, stack.Top.Next.Value);
+        }
+
         [Fact]
         // Showing that I pushed 30 and popped 30 and left with 125
         public void PopValue1()
