@@ -91,5 +91,45 @@ namespace XUnitTestProject1
             stack.Pop();
             Assert.Equal(30, stack.Top.Value);
         }
+        [Fact]
+        // Showing enque by creating two stacks and popping from the rear stack and pushing to the front stack
+        public void ProduceEnqueWithTwoStacks()
+        {
+            Stack FrontStack = new Stack();
+            Stack RearStack = new Stack();
+            RearStack.Push(15);
+            FrontStack.Push(RearStack.Pop().Value);
+            Assert.Equal(15,FrontStack.Top.Value);
+        }
+        [Fact]
+        // Showing enque by creating two stacks and popping from the rear stack and pushing to the front stack
+        public void ProduceEnqueWithTwoStacks2()
+        {
+            Stack FrontStack = new Stack();
+            Stack RearStack = new Stack();
+            RearStack.Push(125);
+            FrontStack.Push(RearStack.Pop().Value);
+            Assert.Equal(125, FrontStack.Top.Value);
+        }
+        [Fact]
+        // Showing enque by creating two stacks and popping from the rear stack and pushing to the front stack
+        public void ProduceEnqueWithTwoStacks3()
+        {
+            Stack FrontStack = new Stack();
+            Stack RearStack = new Stack();
+            RearStack.Push(325);
+            FrontStack.Push(RearStack.Pop().Value);
+            Assert.Equal(325, FrontStack.Top.Value);
+        }
+        [Fact]
+        // Showing the transfer from the rear stack to the front stack to show Dequeue
+        public void ProduceDequeueWithTwoStacks1()
+        {
+            Stack FrontStack = new Stack();
+            Stack RearStack = new Stack();
+            FrontStack.Push(15);
+            RearStack.Push(FrontStack.Pop().Value);
+            Assert.Equal(15, RearStack.Top.Value);
+        }
     }
 }
