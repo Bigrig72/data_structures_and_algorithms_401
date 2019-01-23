@@ -6,3 +6,4 @@
 3. [Challenge: Linked List](https://github.com/Bigrig72/data_structures_and_algorithms_401/tree/master/Challenges/LinkedList/LinkedList)
 4. [Challenge: Linked List part two](https://github.com/Bigrig72/data_structures_and_algorithms_401/tree/master/Challenges/LinkedListChallenge1)
 5. [Challenge: Linked List Merge](https://github.com/Bigrig72/data_structures_and_algorithms_401/tree/master/Challenges/linkedList-Merge)
+6. [Challenge: PseudoQueue](https://github.com/Bigrig72/data_structures_and_algorithms_401/tree/master/Challenges/QueueWithStacks)
