@@ -151,5 +151,16 @@ namespace XUnitTestProject1
             RearStack.Push(FrontStack.Pop().Value);
             Assert.Equal(325, RearStack.Top.Value);
         }
+        [Fact]
+        // Showing peek on the top of a stack, showing top value
+        public void peek()
+        {
+            Stack FrontEnd = new Stack();
+            Stack BackEnd = new Stack();
+            FrontEnd.Push(25);
+            BackEnd.Push(FrontEnd.Pop().Value);
+            Assert.Equal(25, BackEnd.Top.Value);
+
+        }
     }
 }
