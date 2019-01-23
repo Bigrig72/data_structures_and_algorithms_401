@@ -2,7 +2,7 @@
 {
     public class Stack
     {
-        //top reference so we know where the top is
+        // Top reference so we know where the top is
 
         public Node Top { get; set; }
 
@@ -10,8 +10,7 @@
         {
             Top = node;
         }
-
-        // Give us an empty stack
+              
 
         public Stack()
         {

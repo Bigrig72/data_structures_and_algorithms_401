@@ -131,5 +131,25 @@ namespace XUnitTestProject1
             RearStack.Push(FrontStack.Pop().Value);
             Assert.Equal(15, RearStack.Top.Value);
         }
+        [Fact]
+        // Showing the transfer from the rear stack to the front stack to show Dequeue
+        public void ProduceDequeueWithTwoStacks2()
+        {
+            Stack FrontStack = new Stack();
+            Stack RearStack = new Stack();
+            FrontStack.Push(125);
+            RearStack.Push(FrontStack.Pop().Value);
+            Assert.Equal(125, RearStack.Top.Value);
+        }
+        [Fact]
+        // Showing the transfer from the rear stack to the front stack to show Dequeue
+        public void ProduceDequeueWithTwoStacks3()
+        {
+            Stack FrontStack = new Stack();
+            Stack RearStack = new Stack();
+            FrontStack.Push(325);
+            RearStack.Push(FrontStack.Pop().Value);
+            Assert.Equal(325, RearStack.Top.Value);
+        }
     }
 }

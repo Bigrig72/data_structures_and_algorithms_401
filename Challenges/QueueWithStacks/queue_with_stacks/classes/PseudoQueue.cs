@@ -8,7 +8,9 @@ namespace queue_with_stacks.classes
     {
         private Stack frontEnd;
         private Stack backEnd;
-
+        /// <summary>
+        /// Creating 2 empty stacks to transfer back and forth and assign top to null as a starting reference for that stack
+        /// </summary>
         public PseudoQueue()
         {
             frontEnd = new Stack();
