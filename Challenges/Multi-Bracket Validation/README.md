@@ -1,4 +1,4 @@
-## Code Challenge
+# Code Challenge
 Multi-bracket Validation.
 
 ## What is the challenge?
@@ -10,6 +10,8 @@ in the string are balanced. There are 3 types of brackets:
 3. Curly Brackets : {}
 
 ## Approach
+Space--O(n)
+Time--O(n)
 The utilization of a stack in this problem domain was used to return True or False, whether the string contained a perfect bracket matching sequence or not.
 A class Stack and Node were built out, with methods of Pop(), Push(), and Peek() utilized for the stack class. The Node class was built out to give us a Value and a Next.
 This problem domain involved using a char array to convert the string into individual characters, divided by commas for each charachter. Following
