@@ -12,7 +12,7 @@ namespace Trees.classes
         {
             Top = null;
         }
-        public BinaryTree(int value)
+        public BinaryTree(Object value)
         {
             Top = new Node(value);
         }
