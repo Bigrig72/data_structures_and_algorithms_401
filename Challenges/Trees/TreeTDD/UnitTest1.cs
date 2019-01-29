@@ -1,9 +1,9 @@
 using System;
 using Xunit;
-using Trees.classes;
+using Trees.Classes;
 using System.Collections.Generic;
 
-namespace TreeTesting
+namespace TreeTDD
 {
     public class UnitTest1
     {
@@ -63,8 +63,6 @@ namespace TreeTesting
             valueList.Add(node6.Value);
 
             Assert.Equal(AddNodeList[0], valueList[0]);
-
-            
         }
     }
 }

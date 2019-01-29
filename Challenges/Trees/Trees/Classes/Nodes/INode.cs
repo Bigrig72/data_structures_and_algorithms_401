@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Trees.classes
+﻿namespace Trees.Classes
 {
     public class Node
     {

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Trees.classes
+namespace Trees.Classes
 {
     public class BinarySearchTree
     {
@@ -31,8 +29,9 @@ namespace Trees.classes
             do
             {
                 // Tells us to go left
-                if (value < CurrentNode.Value)
+                if (value.CompareTo(CurrentNode.Value) < 0)
                 {
+                    //Value is less than the current node.value
                     // If there is nothing there go ahead and make a node
                     if (CurrentNode.Left == null)
                     {
@@ -47,8 +46,9 @@ namespace Trees.classes
                     }
                 }
 
-            if(value >= CurrentNode.Value)
+            if(value.CompareTo(CurrentNode.Value) >= 0)
                 {
+                    // Value is greater than or equal to current node.value
                     if(CurrentNode.Right == null)
                     {
                         Node NewNode = new Node(value);
@@ -65,31 +65,31 @@ namespace Trees.classes
 
         }
 
-        private void AddR(Node n, int value)
-        {
-            if (n == null)
-            {
-                Node newnode = new Node(value);
-                n = newnode;
-                return;
-            }
-            if (value < n.Value)
-            {
-                AddR(n.Left, value);
-                return;
-            }
-            if(value >= n.Value)
-            {
-                AddR(n.Right, value);
-                return;
-            }
-        }
+        //private void AddR(Node n, object value)
+        //{
+        //    if (n == null)
+        //    {
+        //        Node newnode = new Node(value);
+        //        n = newnode;
+        //        return;
+        //    }
+        //    if (value.CompareTo(n.Value) < 0)
+        //    {
+        //        AddR(n.Left, value);
+        //        return;
+        //    }
+        //    if(value.CompareTo(n.Value) >= 0)
+        //    {
+        //        AddR(n.Right, value);
+        //        return;
+        //    }
+        //}
         /// <summary>
         /// Utilizing a queue to to traverse and form a list of nodes.
         /// </summary>
         /// <param name="node"></param>
         /// <param name="valueList"></param>
-        public void Traverse(Node node, List<int> valueList)
+        public void Traverse(Node node, List<object> valueList)
         {
             var NewQueue = new Queue<Node>();
             NewQueue.Enqueue(node);
