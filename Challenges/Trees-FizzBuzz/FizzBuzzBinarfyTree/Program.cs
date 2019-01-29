@@ -14,14 +14,14 @@ namespace FizzBuzzBinarfyTree
         }
 
 
-        public static void FizzBuzzTree(BinaryTree tree)
+        public static void FizzBuzzTree(BinaryTree binaryTree)
         {
-            if(tree.Top)
+            if(binaryTree.Top == null)
             {              
                 return;
             }
            
-            if(root.Left.Value. % 3 == 0 & (root.Left.Value %= 5 == 0))
+            if(binaryTree.Top.Left.Value % 3 == 0 & binaryTree.Top.Left.Value % 5 == 0)
             {
                 var temp = "FizzBuzz";
                 temp = root.
