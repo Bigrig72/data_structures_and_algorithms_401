@@ -1,25 +1,32 @@
 ﻿using System;
 using Trees.classes;
+using FizzBuzzBinarfyTree.Classes;
 
 namespace FizzBuzzBinarfyTree
 {
     public class Program
     {
+
         static void Main(string[] args)
         {
           
 
         }
 
-        public static void FizzBuzzTree(BinaryTree binaryTree)
+
+        public static void FizzBuzzTree(BinaryTree tree)
         {
-            if(binaryTree.Top == null)
-            {
+            if(tree.Top)
+            {              
                 return;
             }
-            if(binaryTree.Top.Left.Value % 3 == 0 & binaryTree.Top.Left.Value % 5 == 0)
+           
+            if(root.Left.Value. % 3 == 0 & (root.Left.Value %= 5 == 0))
             {
-                binaryTree.Top.Left.Value = "FizzBuzz";
+                var temp = "FizzBuzz";
+                temp = root.
+
+                ree.Top.Left.Value = temp;
             }
         }
     }
