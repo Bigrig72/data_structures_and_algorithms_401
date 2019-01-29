@@ -1,6 +1,7 @@
 ﻿using System;
-using Trees.classes;
 using FizzBuzzBinarfyTree.Classes;
+using FizzBuzzBinaryTree.Classes;
+using 
 
 namespace FizzBuzzBinarfyTree
 {
@@ -9,24 +10,46 @@ namespace FizzBuzzBinarfyTree
 
         static void Main(string[] args)
         {
-          
+
 
         }
 
 
-        public static void FizzBuzzTree(BinaryTree binaryTree)
+        public static void FizzBuzzTree(Root root)
         {
-            if(binaryTree.Top == null)
-            {              
-                return;
-            }
-           
-            if(binaryTree.Top.Left.Value % 3 == 0 & binaryTree.Top.Left.Value % 5 == 0)
+            if(root != null)
             {
-                var temp = "FizzBuzz";
-                temp = root.
+                
+            }
+        
+            if ((int)root.Value % 15 == 0)
+            {
 
-                ree.Top.Left.Value = temp;
+     
+                root.Value = "Fizzbuzz";
+            }
+            else if ((int)root.Value % 5 == 0)
+            {
+                root.Value = "Fizz";
+            }
+            else if ((int)root.Value % 3 == 0)
+            {
+                root.Value = "Buzz";
+            }
+            else
+            {
+                if ((int)root.Right.Value % 3 == 0 & (int)root.Right.Value % 5 == 0)
+                {
+                    root.Value = "FizzBuzz";
+                }
+                else if ((int)root.Right.Value % 5 == 0)
+                {
+                    root.Value = "Fizz";
+                }
+                else if ((int)root.Right.Value % 3 == 0)
+                {
+                    root.Value = "Buzz";
+                }
             }
         }
     }

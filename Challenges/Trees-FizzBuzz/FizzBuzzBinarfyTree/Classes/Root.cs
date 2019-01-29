@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FizzBuzzBinarfyTree.Classes
+namespace FizzBuzzBinaryTree.Classes
 {
     public class Root
     {
