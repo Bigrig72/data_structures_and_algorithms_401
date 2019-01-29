@@ -1,4 +1,4 @@
-﻿namespace Trees.classes
+﻿namespace Trees.Classes
 {
     public class Node
     {
