@@ -12,8 +12,11 @@ Define a method named contains that accepts a value, and returns a boolean indic
 
 ## API:
 
-1. Add method
-2. Contains method
+1. Add method - This method will search starting left on the tree, if there is no node there it will create another node
+and it will keep moving left. This will also repeat for the right side.
+2. Contains method - This will check if the root is null and if it is return false on that value. if root value
+equals the value being passed in we will return true. If the root value is greater than the value being passed in we will recursively 
+call contains and go left again to find a match, if no match it will recursively go right and look for match
 3. Preorder
 4. Postorder
 5. Inorder
