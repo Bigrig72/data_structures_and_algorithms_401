@@ -18,24 +18,25 @@ namespace Trees.Classes
 
         public void Add(int value)
         {
+            Node NewNode = new Node(value);
             if(Top == null)// The tree is empty
             {
-                Node NewNode = new Node(value);
                 Top = NewNode;
                 return;
             }
-            Node CurrentNode = Top;
+            Node CurrentNode = NewNode;
             bool added = false;
             do
             {
                 // Tells us to go left
-                if (value.CompareTo(CurrentNode.Value) < 0)
+           
+                if (CurrentNode.Value < NewNode.Value)
                 {
                     //Value is less than the current node.value
                     // If there is nothing there go ahead and make a node
                     if (CurrentNode.Left == null)
                     {
-                        Node NewNode = new Node(value);
+                       
                         CurrentNode.Left = NewNode;
                         added = true;
                     }
@@ -46,12 +47,12 @@ namespace Trees.Classes
                     }
                 }
 
-            if(value.CompareTo(CurrentNode.Value) >= 0)
+            if(CurrentNode.Value >= NewNode.Value)
                 {
                     // Value is greater than or equal to current node.value
                     if(CurrentNode.Right == null)
                     {
-                        Node NewNode = new Node(value);
+                  
                         CurrentNode.Right = NewNode;
                         added = true;
                     }
