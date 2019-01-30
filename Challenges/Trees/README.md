@@ -1,6 +1,7 @@
 # Code Challenge Trees
 
-## Binary Tree and Binary Search Tree
+## Challenge
+
 Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
 Create a BinaryTree class and Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which
 returns an array of the values, ordered appropriately.
@@ -9,7 +10,17 @@ Create a BinarySearchTree class
 Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
 Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
-## What is Depth first:
+## API:
+
+1. Add method
+2. Contains method
+3. Preorder
+4. Postorder
+5. Inorder
+
+
+
+## Approach and Efficiency
 
 Depth first is a traversal that traverses the depth (height) of the tree.
 
@@ -22,7 +33,6 @@ Left, Root, Right
 Postorder
 Left, Right, Root
 
-## What is Breadth First
 
 Breadth First
 The breadth first traversal iterates through the tree by going through each level of the tree node by node.
