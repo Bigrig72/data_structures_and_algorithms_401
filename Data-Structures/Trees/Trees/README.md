@@ -17,9 +17,9 @@ and it will keep moving left. This will also repeat for the right side.
 2. Contains method - This will check if the root is null and if it is return false on that value. if root value
 equals the value being passed in we will return true. If the root value is greater than the value being passed in we will recursively 
 call contains and go left again to find a match, if no match it will recursively go right and look for match
-3. Preorder
-4. Postorder
-5. Inorder
+3. Preorder- Pre order traversal(Root-Left-Right), The first thing we will do is check if node is not null, if not 
+4. Postorder- This method will be the same as preorder, but it will start from the bottom of the tree and work its way up
+5. Inorder- This will go to the left then evaluate the root then evaluate the right.
 
 
 
