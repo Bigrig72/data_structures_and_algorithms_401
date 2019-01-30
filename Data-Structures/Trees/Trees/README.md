@@ -25,7 +25,7 @@ call contains and go left again to find a match, if no match it will recursively
 
 ## Approach and Efficiency
 
-Depth first is a traversal that traverses the depth (height) of the tree.
+Depth first O(H)--is a traversal that traverses the depth (height) of the tree. 
 
 The different traversals determine at which point the Root is looked at. Here are the three different depth first traversals broken down:
 
@@ -37,6 +37,6 @@ Postorder
 Left, Right, Root
 
 
-Breadth First
+Breadth First--O(n) being worst case and O(log n) being best case
 The breadth first traversal iterates through the tree by going through each level of the tree node by node.
 Traditionally the breadth first traversal leverages a queue to traverse the width (or the breadth) of the tree.
