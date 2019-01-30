@@ -12,9 +12,9 @@ namespace Trees.Classes
         {
             Top = null;
         }
-        public BinaryTree(Object value)
+        public BinaryTree(Node value)
         {
-            Top = new Node(value);
+            Top = value;
         }
         /// <summary>
         /// checking to see if the tree is empty, if it is, return a new

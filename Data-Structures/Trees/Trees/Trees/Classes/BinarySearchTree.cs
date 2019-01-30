@@ -65,25 +65,7 @@ namespace Trees.Classes
 
         }
 
-        //private void AddR(Node n, object value)
-        //{
-        //    if (n == null)
-        //    {
-        //        Node newnode = new Node(value);
-        //        n = newnode;
-        //        return;
-        //    }
-        //    if (value.CompareTo(n.Value) < 0)
-        //    {
-        //        AddR(n.Left, value);
-        //        return;
-        //    }
-        //    if(value.CompareTo(n.Value) >= 0)
-        //    {
-        //        AddR(n.Right, value);
-        //        return;
-        //    }
-        //}
+     
         /// <summary>
         /// Utilizing a queue to to traverse and form a list of nodes.
         /// </summary>
