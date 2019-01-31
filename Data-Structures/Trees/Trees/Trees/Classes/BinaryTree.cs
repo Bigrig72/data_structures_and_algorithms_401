@@ -24,11 +24,10 @@ namespace Trees.Classes
         /// <param name="node"></param>
         /// <param name="data"></param>
         /// <returns></returns>
-        public Node Insert(Node node, int data)
+        public Node Insert(Node node)
         {
             if(node == null)
             {
-                var newOne = new Node(data);
                 if(Top == null)
                 {
                     Top = newOne;
@@ -39,11 +38,11 @@ namespace Trees.Classes
             {
                 if(data <= node.Value)
                 {
-                    node.Left = Insert(node.Left, data);
+                    node.Left = Insert(node.Left);
                 }
                 else
                 {
-                    node.Right = Insert(node.Right, data);
+                    node.Right = Insert(node.Right);
                 }
             }
             return node;
