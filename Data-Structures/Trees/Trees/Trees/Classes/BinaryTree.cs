@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Trees.Classes
 {
-    public class BinaryTree
+    public class BinaryTree:Tree
     {
-        public Node Top { get; set; }
+      
 
         public BinaryTree()
         {
-            Top = null;
+            Root = null;
         }
-        public BinaryTree(Node value)
+        public BinaryTree(Node node)
         {
-            Top = value;
+            Root = node;
         }
         /// <summary>
         /// checking to see if the tree is empty, if it is, return a new
@@ -24,29 +22,29 @@ namespace Trees.Classes
         /// <param name="node"></param>
         /// <param name="data"></param>
         /// <returns></returns>
-        public Node Insert(Node node)
-        {
-            if(node == null)
-            {
-                if(Top == null)
-                {
-                    Top = newOne;
-                }
-                return newOne;
-            }
-            else
-            {
-                if(data <= node.Value)
-                {
-                    node.Left = Insert(node.Left);
-                }
-                else
-                {
-                    node.Right = Insert(node.Right);
-                }
-            }
-            return node;
-        }
+        //public Node Insert(Node node)
+        //{
+        //    if(node == null)
+        //    {
+        //        if(Top == null)
+        //        {
+        //            Top = newOne;
+        //        }
+        //        return newOne;
+        //    }
+        //    else
+        //    {
+        //        if(data <= node.Value)
+        //        {
+        //            node.Left = Insert(node.Left);
+        //        }
+        //        else
+        //        {
+        //            node.Right = Insert(node.Right);
+        //        }
+        //    }
+        //    return node;
+        //}
         /// <summary>
         /// Pre order traversal(Root-Left-Right)
         /// </summary>
