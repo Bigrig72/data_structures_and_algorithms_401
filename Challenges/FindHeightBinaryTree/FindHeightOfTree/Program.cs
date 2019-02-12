@@ -47,6 +47,7 @@ namespace FindHeightOfTree
             {
                 int leftDepth = CalculateBinaryTreelevel(root.Left);
                 int rightDepth = CalculateBinaryTreelevel(root.Right);
+
                 if(leftDepth > rightDepth)
                 {
                     return (leftDepth + 1);
