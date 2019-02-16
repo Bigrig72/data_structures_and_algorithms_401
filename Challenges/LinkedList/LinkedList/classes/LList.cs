@@ -12,7 +12,7 @@ namespace LinkedList.classes
         public Node Head { get; set; }
         public Node Current { get; set; }
 
-        public void Insert(int value)
+        public void Insert(Object value)
         {
             Node node = new Node(value);
             node.Next = Head;
@@ -27,7 +27,7 @@ namespace LinkedList.classes
         /// False if Null of hit the end of the tree
         /// </returns>
 
-        public bool Includes(int value)
+        public bool Includes(Object value)
         {
             //set current to head because you dont traverse with the head
             Current = Head;
@@ -36,13 +36,13 @@ namespace LinkedList.classes
             //We are not at the end of the list
             while (Current.Next != null)
             {
-                if (Current.Value == value)
+                if (Current.Value.Equals(value))
                 {
                     return true;
                 }
                 Current = Current.Next;
             }
-            if (Current.Value == value)
+            if (Current.Value.Equals(value))
             {
                 return true;
             }
@@ -73,7 +73,7 @@ namespace LinkedList.classes
                 Console.Write("Your LL is empty");
             }
         }
-        public void Append(int value)
+        public void Append(Object value)
         {
             Current = Head;
 
@@ -88,12 +88,27 @@ namespace LinkedList.classes
             Current.Next = node;
 
         }
-
-        public void InsertBefore(int value, int newValue)
+        public void Append(Object key, Object value)
         {
             Current = Head;
 
-            if(Current.Value == value)
+            while (Current.Next != null)
+            {
+
+                Current = Current.Next;
+
+            }
+
+            Node node = new Node(key,value);
+            Current.Next = node;
+
+        }
+
+        public void InsertBefore(Object value, Object newValue)
+        {
+            Current = Head;
+
+            if(Current.Value.Equals(value))
             {
                 Insert(newValue);
                 return;
@@ -101,7 +116,7 @@ namespace LinkedList.classes
 
             while(Current.Next != null)
             {
-                if(Current.Next.Value == value)
+                if(Current.Next.Value.Equals(value))
                 {
                     Node node = new Node(newValue);
                     node.Next = Current.Next;
@@ -112,11 +127,11 @@ namespace LinkedList.classes
                 Current = Current.Next;
             }
         }
-        public void InsertAfter(int value, int newValue)
+        public void InsertAfter(Object value, Object newValue)
         {
             Current = Head;
 
-            if (Current.Value == value)
+            if (Current.Value.Equals(value))
             {
                 Insert(newValue);
                 return;
@@ -124,7 +139,7 @@ namespace LinkedList.classes
 
             while (Current.Next != null)
             {
-                if (Current.Value == value)
+                if (Current.Value.Equals(value))
                 {
                     Node node = new Node(newValue);
                     node.Next = Current.Next;
