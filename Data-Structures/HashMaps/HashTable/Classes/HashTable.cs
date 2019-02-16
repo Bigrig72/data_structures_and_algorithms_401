@@ -51,9 +51,21 @@ namespace HashTable.Classes
             
         }
 
-        public bool Contains(Object Key, Object value)
+        public bool Contains(Object key, Object value)
         {
+            int idx = Hash(key);
+            Object returnedValue = Get(key);
 
+            if (returnedValue == null)
+            {
+                return false;
+            }
+            if (returnedValue.Equals(value))
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
