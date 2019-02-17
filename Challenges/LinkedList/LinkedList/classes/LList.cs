@@ -75,32 +75,37 @@ namespace LinkedList.classes
         }
         public void Append(Object value)
         {
-            Current = Head;
+            //Current = Head;
 
-            while (Current.Next != null)
-            {
+            //while (Current.Next != null)
+            //{
           
-                Current = Current.Next;
+            //    Current = Current.Next;
 
-            }
+            //}
 
             Node node = new Node(value);
-            Current.Next = node;
+            node.Next = Head;
+            Head = node;
+            //Current.Next = node;
 
         }
         public void Append(Object key, Object value)
         {
-            Current = Head;
+            //Current = Head;
 
-            while (Current.Next != null)
-            {
+            //while (Current.Next != null)
+            //{
 
-                Current = Current.Next;
+            //    Current = Current.Next;
 
-            }
+            //}
 
             Node node = new Node(key,value);
-            Current.Next = node;
+            node.Next = Head;
+            Head = node;
+
+           // Current.Next = node;
 
         }
 

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace HashTable
+namespace InsertionSort
 {
-    public class Program
+   public class Program
     {
         static void Main(string[] args)
         {
