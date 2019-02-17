@@ -10,11 +10,18 @@ namespace LinkedList.classes
     public class Node
     {
 
-        public int Value { get; set; }
+        public Object Value { get; set; }
         public Node Next { get; set; }
+        public Object Key { get; set; }
+        
 
-        public Node(int value)
+        public Node(Object value)
         {
+            Value = value;
+        }
+        public Node(Object key, Object value)
+        {
+            Key = key;
             Value = value;
         }
 

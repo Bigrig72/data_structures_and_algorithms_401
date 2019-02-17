@@ -158,7 +158,6 @@ namespace LinkedListTDD
             //list.Insert(9);
             //list.Insert(6);
             list.Append(10);
-
             //Act 
 
             bool isFound = list.Includes(10);
