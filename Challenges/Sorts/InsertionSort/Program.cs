@@ -2,11 +2,19 @@
 
 namespace InsertionSort
 {
-   public class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] array = { 9, 5, 7, 2, 1, 3, 19 };
+            Sort anyArray = new Sort(array);
+            anyArray.InsertionSort();
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"Value: {array[i]}");
+            }
+
         }
     }
 }
