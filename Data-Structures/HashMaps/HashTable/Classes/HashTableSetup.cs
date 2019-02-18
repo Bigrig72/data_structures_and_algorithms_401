@@ -78,6 +78,7 @@ namespace HashTable.Classes
 
         public bool Contains(Object key, Object value)
         {
+
             int idx = Hash(key);
             Object returnedValue = Get(key);
 
