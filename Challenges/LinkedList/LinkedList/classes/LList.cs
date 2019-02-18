@@ -75,37 +75,37 @@ namespace LinkedList.classes
         }
         public void Append(Object value)
         {
-            //Current = Head;
-
-            //while (Current.Next != null)
-            //{
-          
-            //    Current = Current.Next;
-
-            //}
-
             Node node = new Node(value);
-            node.Next = Head;
-            Head = node;
-            //Current.Next = node;
+            Current = Head;
+            if (Head == null)
+            {
+                Head = node;
+            }
+            Current = Head;
+
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+
+            }          
+            Current.Next = node;
 
         }
         public void Append(Object key, Object value)
         {
-            //Current = Head;
-
-            //while (Current.Next != null)
-            //{
-
-            //    Current = Current.Next;
-
-            //}
-
             Node node = new Node(key,value);
-            node.Next = Head;
-            Head = node;
+            if(Head == null)
+            {
+                Head = node;
+            }
+            else {
+                Current = Head;
+                while (Current.Next != null)            {
 
-           // Current.Next = node;
+                    Current = Current.Next;
+                }
+                Current.Next = node;
+            }
 
         }
 
@@ -154,6 +154,20 @@ namespace LinkedList.classes
 
                 Current = Current.Next;
             }
+        }
+
+        public Object Find(Object key)
+        {
+            Current = Head;
+            while(Current != null)
+            {
+                if(Current.Key == key)
+                {
+                    return Current.Value;
+                }
+                Current = Current.Next;
+            }
+            return null;
         }
     }
 }
