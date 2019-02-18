@@ -7,8 +7,8 @@ namespace HashTable.Classes
 {
     public class HashTableSetup       
     {
-        private LList[] Bucket { get; set; }
-        private int _size;
+        public LList[] Bucket { get; set; }
+        public int _size;
 
         public HashTableSetup(int size)
         {
@@ -19,8 +19,8 @@ namespace HashTable.Classes
         public int Hash(Object key)
         {
            string  Keystring = (string)key;
-            long num = 1;
-            foreach (char item in Keystring)
+           long num = 1;
+           foreach (char item in Keystring)
             {
                 num *= item;
             }
@@ -36,7 +36,7 @@ namespace HashTable.Classes
             {
                 Bucket[idx] = new LList();
             }
-            if(Get(key) != null)
+            if(Get(key) == null)
             {
                 Bucket[idx].Append(key, value);
             }
@@ -49,7 +49,9 @@ namespace HashTable.Classes
             {
                 return null;
             }
-            return Bucket[idx].Current.Value;
+
+            Object findValue = Bucket[idx].Find(key);
+            return findValue;
             
         }
 
