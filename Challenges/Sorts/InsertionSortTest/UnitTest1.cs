@@ -1,15 +1,14 @@
-using System;
-using Xunit;
 using InsertionSort;
+using Xunit;
 
 
 namespace InsertionSortTest
 {
-//TEST 1X A randomly generated unsorted array returns the array sorted
-//TEST 2X A sorted array returns the same sorted array
-//TEST 3 A backwards-sorted array returns the array sorted
-//TEST 4X An empty array returns the same empty array
-//TEST 5 An array of one element returns the same single-element array
+    //TEST 1X A randomly generated unsorted array returns the array sorted
+    //TEST 2X A sorted array returns the same sorted array
+    //TEST 3X A backwards-sorted array returns the array sorted
+    //TEST 4X An empty array returns the same empty array
+    //TEST 5X An array of one element returns the same single-element array
     public class UnitTest1
     {
         [Fact]
@@ -22,7 +21,6 @@ namespace InsertionSortTest
             int[] array2 = { 1, 2, 3, 5, 7, 9, 19 };
 
             Assert.Equal(array2, array);
-
         }
        
         
@@ -38,6 +36,7 @@ namespace InsertionSortTest
             Assert.Equal(array2, array);
 
         }
+
         [Fact]
         public void TEST3SortArrayBackwards()
         {
@@ -50,6 +49,7 @@ namespace InsertionSortTest
             Assert.Equal(array2, array);
 
         }
+
         [Fact]
         public void TEST4SortArrayEMPTY()
         {
@@ -62,6 +62,7 @@ namespace InsertionSortTest
             Assert.Equal(array2, array);
 
         }
+
         [Fact]
         public void TEST5SortArrayOneElement()
         {
