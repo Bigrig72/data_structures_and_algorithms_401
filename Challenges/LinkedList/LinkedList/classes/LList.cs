@@ -161,7 +161,7 @@ namespace LinkedList.classes
             Current = Head;
             while(Current != null)
             {
-                if(Current.Key == key)
+                if(Current.Key.Equals(key))
                 {
                     return Current.Value;
                 }
