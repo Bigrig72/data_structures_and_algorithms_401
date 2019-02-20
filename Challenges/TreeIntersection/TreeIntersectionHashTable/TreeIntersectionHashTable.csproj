@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="HashTable">
+      <HintPath>..\..\..\Data-Structures\HashMaps\HashTable\bin\Debug\netcoreapp2.2\HashTable.dll</HintPath>
+    </Reference>
+    <Reference Include="LinkedList">
+      <HintPath>..\..\..\Data-Structures\HashMaps\HashTable\bin\Debug\netcoreapp2.2\LinkedList.dll</HintPath>
+    </Reference>
+    <Reference Include="Trees">
+      <HintPath>..\..\..\Data-Structures\Trees\Trees\Trees\obj\Debug\netcoreapp2.2\Trees.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
