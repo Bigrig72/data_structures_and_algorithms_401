@@ -24,17 +24,17 @@ namespace Trees.Classes
         /// <returns></returns>
         //public Node Insert(Node node)
         //{
-        //    if(node == null)
+        //    if (node == null)
         //    {
-        //        if(Top == null)
+        //        if (Root == null)
         //        {
-        //            Top = newOne;
+        //            Root = node;
         //        }
-        //        return newOne;
+        //        return node;
         //    }
         //    else
         //    {
-        //        if(data <= node.Value)
+        //        if (Root <= node.Value)
         //        {
         //            node.Left = Insert(node.Left);
         //        }
@@ -77,7 +77,7 @@ namespace Trees.Classes
         /// Post order(Left-Right-Root)
         /// </summary>
         /// <param name="node"></param>
-        /// <param name="valueList"></param>
+        /// <param name="valueList"></param>++++++++++
         public void Postorder(Node node, List<int> valueList)
         {
             if(node != null)
