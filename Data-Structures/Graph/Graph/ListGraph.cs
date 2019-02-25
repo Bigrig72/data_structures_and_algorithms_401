@@ -61,14 +61,14 @@ namespace Graph
             }
         }
 
-        public void ShowNeigh(Node v)
-        {
-            Dictionary<Node, bool> visited = new Dictionary<Node, bool>();
-            Dictionary<Node, Node> result = new Dictionary<Node, Node>();
+        //public void ShowNeigh(Node v)
+        //{
+        //    Dictionary<Node, bool> visited = new Dictionary<Node, bool>();
+        //    Dictionary<Node, Node> result = new Dictionary<Node, Node>();
 
-            Queue<Node> workList = new Queue<Node>();
-            visited.Add(v, false);
-        }
+        //    Queue<Node> workList = new Queue<Node>();
+        //    visited.Add(v, false);
+        //}
 
 
     }
