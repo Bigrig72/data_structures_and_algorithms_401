@@ -23,11 +23,11 @@ namespace AdjacentListGraph
         }
         public Dictionary<T, HashSet<T>> AdjacencyList { get; } = new Dictionary<T, HashSet<T>>();
 
-        public void AddVertex(T vertex)
+        public void AddVertex(T vertex, T weight)
         {
             AdjacencyList[vertex] = new HashSet<T>();
         }
-        public void AddEdge(Tuple<T, T> edge)
+        public void AddEdge(Tuple<T, T> edge, Tuple<T, T> weight)
         {
             if (AdjacencyList.ContainsKey(edge.Item1) && AdjacencyList.ContainsKey(edge.Item2))
             {
