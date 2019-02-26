@@ -15,5 +15,9 @@ Traverse Level 4: 9, 10
 
 To make sure the breadth-first search algorithm doesn't re-visit vertices, the visited HashSet keeps track of vertices already visited. A Queue, called queue, keeps track of vertices found but not yet visited. Initially queue contains the starting vertex. The next vertex is dequeued from queue. If it has already been visited, it is discarded and the next vertex is dequeued from queue. If it has not been visited, it is added to the set of visited vertices and its unvisited neighbors are added to queue. This continues until there are no more vertices in queue, and the set of vertices visited is returned. The set of vertices returned is all the vertices that can be reached from the starting vertex.
 
+BIG O
+time-O(n)
+space-O(n)
+
 ## Solution
 ![demo](https://github.com/Bigrig72/data_structures_and_algorithms_401/blob/master/Challenges/Breadth-First-Graph/BreadthFirst/Assets/Capture.PNG)
