@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="LinkedList">
-      <HintPath>..\..\..\Challenges\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\LinkedList.dll</HintPath>
+    <Reference Include="HashTable">
+      <HintPath>..\..\..\Data-Structures\HashMaps\HashTable\bin\Debug\netcoreapp2.2\HashTable.dll</HintPath>
     </Reference>
   </ItemGroup>
 

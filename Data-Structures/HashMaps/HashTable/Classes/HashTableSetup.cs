@@ -31,7 +31,7 @@ namespace HashTable.Classes
                 num *= item;
             }
 
-            return (int)((num * 599) % _size);
+            return (int)((num * 19) % _size);
         }
         /// <summary>
         /// Checking to see if that index is null, if so create a new linked list for that spot, next we append
