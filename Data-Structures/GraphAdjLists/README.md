@@ -43,9 +43,12 @@ Time- O(1)- Using a hash set to access a value for neighbors, returning a whole 
 AddEdge()
 AddVertex()
 BuildGraph()
+## Depth First Traversal- Challenge 33
 DFS()- Depth first traversal -To make sure the depth-first search algorithm doesn't re-visit vertices, the visited
 HashSet keeps track of vertices already visited. A Stack, called stack, keeps track of vertices found but not yet visited. 
 Initially stack contains the starting vertex. The next vertex is popped from stack. If it has already been visited, it is discarded 
 and the next vertex is popped from stack. If it has not been visited, it is added to the set of visited vertices and its unvisited 
 neighbors are added to stack. This continues until there are no more vertices in stack, and the set of vertices visited is returned.
 The set of vertices returned is all the vertices that can be reached from the starting vertex.
+
+![whiteboard](https://github.com/Bigrig72/data_structures_and_algorithms_401/blob/master/Data-Structures/GraphAdjLists/AdjacentListGraph/Assets/2-28-19%2C%2011_34%20AM%20Office%20Lens.jpeg)
